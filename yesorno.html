@@ -1,0 +1,22 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, intitial-scale=1.0">
+    <title>Cookie Clicker</title>
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+</head>
+<body>
+  <p><span style ="font-family: sans-serif;">Use 50 Cookies to add 5 cookies per click?</span></p>
+  <button id="click-btn"  py-click="yes()" >Yes</button>
+  <button id="click-btn" py-click="no()" >No</button>
+ 
+  
+    <py-script>
+      from js import window
+      def yes():
+        window.location.href = "yes.html"
+      def no():
+        window.location.href = "no.html"
+    </py-script>
+
+</body>

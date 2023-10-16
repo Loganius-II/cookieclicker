@@ -1,0 +1,19 @@
+<head>
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    <title>Congrats!</title>
+</head>
+
+<body>
+    <h3>Contrats! You reached 100 cookies! You Win!</h3>
+    <button id="click-btn"  py-click="handle_click3()" >Continue</button>
+    <button id="click-btn"  py-click="handle_click1()" >Exit</button>
+    
+    <py-script>
+        from js import window
+
+        def handle_click3():
+            window.location.href = "yesorno.html"   
+        def handle_click1():
+            window.location.href = "https://google.com"
+    </py-script>
+</body>
